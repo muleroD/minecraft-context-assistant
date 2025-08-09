@@ -32,8 +32,13 @@ pip install -r requirements.txt
 LLM_PROVIDER=ollama
 LLM_MODEL=gemma3:4b
 LLM_API_KEY=
+# Path to your Minecraft installation or modpack directory
+MINECRAFT_DIR=C:\Users\YourUser\AppData\Roaming\.minecraft
 ```
-2. Make sure the model is installed in Ollama:
+
+2. Make sure the directory specified in `MINECRAFT_DIR` contains the Minecraft installation or modpack you want to analyze.
+
+3. Make sure the model is installed in Ollama:
 ```sh
 ollama list
 ollama pull gemma3:4b
